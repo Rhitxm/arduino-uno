@@ -30,3 +30,21 @@ void loop() {
   digitalWrite(12, LOW);   // change state of the LED by setting the pin to the LOW voltage level
   delay(1000);                      // wait for a second time in ms
 }
+
+//blink two LED's vice-versa
+
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(8, OUTPUT);
+  pinMode(12, OUTPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(8, HIGH);
+  digitalWrite(12,LOW);  // change state of the LED by setting the pin to the HIGH voltage level
+  delay(1000); 
+  digitalWrite(8, LOW);                     // wait for a second time in ms
+  digitalWrite(12, HIGH);   // change state of the LED by setting the pin to the LOW voltage level
+  delay(1000);                      // wait for a second time in ms
+}
