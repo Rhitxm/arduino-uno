@@ -70,3 +70,20 @@ void loop()
 }
 
 
+//turn of LED only while pressing button
+
+void setup()
+{
+  pinMode(12, OUTPUT);
+  pinMode(2, INPUT);
+}
+
+void loop()
+{
+  if(digitalRead(2)!=HIGH){ //if the button is pressed turn the LED on
+    digitalWrite(12, HIGH);	
+  }
+  else{ //if the button is not pressed, tuen the LED off
+    digitalWrite(12, LOW);
+  }
+}
