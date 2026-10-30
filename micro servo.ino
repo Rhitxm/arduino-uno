@@ -1,5 +1,5 @@
 //to rotate the servo motor by 180 degrees
-
+//only for positional servo motor
 #include <Servo.h>
 
 Servo myservo;  // create Servo object to control a servo
