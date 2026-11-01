@@ -53,7 +53,7 @@ void setup() {
   display.clearDisplay();
   display.setTextColor(SSD1306_WHITE);
 
-  display.setTextSize(1);
+  display.setTextSize(1); //used to denote text size
   display.setCursor(10, 10);
   display.println("wassup JD");
   
