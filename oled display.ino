@@ -1,3 +1,5 @@
+//always run the scan to ensure your OLED display is actually connected before running the actual display program
+
 #include <Wire.h>
 
 void setup() {
