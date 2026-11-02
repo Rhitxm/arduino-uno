@@ -1,6 +1,14 @@
 //PIR sensor is motion sensor 
 //PIR sensor is a motion sensor
 //this is with LED and the LED turns on when the sensor detects any motion
+
+/*
+pin connections:
+VCC: 5V
+GND: ground
+OUT: digital pin 2
+*/
+
 const int pirPin = 2;
 const int ledPin = 13;
 
