@@ -1,6 +1,6 @@
 //PIR sensor is motion sensor 
 //PIR sensor is a motion sensor
-
+//this is with LED and the LED turns 
 const int pirPin = 2;
 const int ledPin = 13;
 
