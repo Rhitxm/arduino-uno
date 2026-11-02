@@ -1,6 +1,6 @@
 //PIR sensor is motion sensor 
 //PIR sensor is a motion sensor
-//this is with LED and the LED turns 
+//this is with LED and the LED turns on when the sensor detects any motion
 const int pirPin = 2;
 const int ledPin = 13;
 
@@ -29,4 +29,26 @@ void loop() {
 }
 
 
-//
+//if you want to do it without an LED
+//test program
+
+const int pirPin = 2;
+
+void setup() {
+  pinMode(pirPin, INPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  int motion = digitalRead(pirPin);
+
+  if (motion == HIGH) {
+    Serial.println("MOTION DETECTED!");
+  }
+  else {
+    Serial.println("No Motion");
+  }
+
+  delay(500);
+}
+
