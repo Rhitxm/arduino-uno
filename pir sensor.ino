@@ -39,7 +39,7 @@ void loop() {
 
 //if you want to do it without an LED
 //test program
-
+//run this test if you want a basic test whether your PIR sensor is working or not
 const int pirPin = 2;
 
 void setup() {
