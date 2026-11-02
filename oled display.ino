@@ -1,5 +1,10 @@
 //always run the scan to ensure your OLED display is actually connected before running the actual display program
-
+/* OLED display connections
+VCC: 3.3 V
+GND: Ground
+SCL: A5
+SDA: A4
+*/
 #include <Wire.h>
 
 void setup() {
