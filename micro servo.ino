@@ -22,3 +22,6 @@ void loop() {
     delay(2);                       // waits 2 ms for the servo to reach the position
   }
 }
+
+
+
